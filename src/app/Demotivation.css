@@ -1,0 +1,158 @@
+/* General body and container styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #111827;
+}
+
+.app-container {
+  background-color: #111827;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* The main card element */
+.card {
+  width: 100%;
+  max-width: 42rem;
+  background-color: #1f2937;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  border: 1px solid #374151;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 2.5rem;
+  }
+}
+
+/* Header, title, and subtitle */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #22d3ee;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+/* Input field and button group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .input-group {
+    flex-direction: row;
+  }
+}
+
+.goal-input {
+  flex-grow: 1;
+  background-color: #374151;
+  border: 2px solid #4b5563;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: white;
+  transition: all 0.3s;
+}
+
+.goal-input::placeholder {
+  color: #6b7280;
+}
+
+.goal-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #06b6d4;
+  border-color: #06b6d4;
+}
+
+/* Send button styles */
+.send-button {
+  background-color: #0891b2;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0e7490;
+  transform: scale(1.05);
+}
+
+.send-button:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Error message style */
+.error-message {
+  color: #f87171;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Response box styles */
+.troll-response {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #111827;
+  border-radius: 0.75rem;
+  border: 1px solid #374151;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.response-title {
+  color: #22d3ee;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.response-text {
+  color: #d1d5db;
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

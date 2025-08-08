@@ -1,0 +1,71 @@
+/* HomePage.css */
+/* --- MODIFIED to match the modern, cyan-accented theme --- */
+
+/* Basic Reset & Dark Theme */
+body {
+  background-color: #111827; /* Updated to match new theme */
+  color: #d1d5db;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container for your app, styled like the .card */
+.frame {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  border: 1px solid #374151; /* Updated border color */
+  border-radius: 1rem; /* Updated border radius */
+  background-color: #1f2937; /* Updated background color */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* Updated box shadow */
+}
+
+/* The navigation button container */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #374151; /* Updated border color */
+}
+
+/* Individual navigation buttons, changed from pills to rounded rectangles */
+.option {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent; /* Start with a transparent border */
+  border-radius: 0.5rem; /* Updated border radius */
+  cursor: pointer;
+  font-weight: 600;
+  color: #9ca3af;
+  background-color: #374151;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.option:hover {
+  background-color: #4b5563;
+  color: #ffffff;
+}
+
+/* Style for the ACTIVE button, now using the cyan theme */
+.option.active {
+  background-color: #0891b2; /* Cyan accent color */
+  color: #ffffff;
+  font-weight: 700;
+  border-color: #0891b2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* The area where your components will be rendered */
+.content {
+  margin-top: 1rem;
+  text-align: center;
+}
