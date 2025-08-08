@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img width="3188" height="1202" alt="frame (3)" src="https://github.com/tinkerhub/useless_project_temp.git" />
 
-## Getting Started
+# The Dream Crusher 🎯
 
-First, run the development server:
+## This project is an anti-motivational website featuring an infinite, unresolvable AI captcha and demotivating quotes to constantly criticize the user's efforts and encourage them to quit
 
-```bash
+### Team Name: Babay Boy's
+
+### Team Members
+
+- Team Lead: Anoop K A - GEC IDUKKI
+- Member 2: Anumod Krishna K - GEC IDUKKI
+
+### Project Description
+
+This project is an anti-motivational website designed with a singular, darkly humorous purpose: to demotivate users and subtly criticize their every effort, ultimately encouraging them to quit. Forget positive affirmations; this site is a digital dream killer, a constant reminder of futility, designed to break the user's spirit through an endless loop of unfulfilling tasks and cynical feedback
+
+### The Problem (that doesn't exist)
+
+This project is an anti-motivational website designed to demotivate overly motivated people through continuous criticism of their efforts
+
+### The Solution (that nobody asked for)
+
+This project offers a unique solution for "overly motivated people": to make them highly unmotivated and negative by using this app. It achieves this by constantly criticizing their efforts and presenting them with unending, unfulfilling tasks, effectively eroding their drive until they give up.
+
+## Technical Details
+
+### Technologies/Components Used
+
+For Software:
+
+- HTML,CSS,JS
+- NEXT.js
+- react.js
+- gemini,groq api , Llama 3,git/gitHub
+
+### Implementation
+
+For Software:
+
+# Installation
+
+download directly from git "https://github.com/Anoop-K-A/useless-project-hackthon"
+
+# Run
+
+-download the folder from git repo and exicute the following command
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Project Documentation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+For Software:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Screenshots (Add at least 3)
 
-## Learn More
+The ai response when a user shares his/her goal
+![footballer-dream.png]
+When a user whants to be like his classmate
+![wants-to-be-like-amal.png]
+Randomly generating Demotivation Quotes
+![randomly-generated-demotivation.png]S
+Randomly generating Demotivation Quotes
+![randomly-generated-demotivation.png]
+Video of infinite CAPTCHA
+![wants-to-be-like-amal.png]
 
-To learn more about Next.js, take a look at the following resources:
+## Team Contributions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Anoop K A: AI logic and functioning
+- Anumod Krishna K: Frontend and ui/ux
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+Made with ❤️ at TinkerHub Useless Projects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
