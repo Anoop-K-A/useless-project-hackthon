@@ -1,0 +1,117 @@
+/* General body and container styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #111827;
+}
+
+.quote-container {
+  background-color: #111827;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* The main card element */
+.quote-card {
+  width: 100%;
+  max-width: 42rem;
+  background-color: #1f2937;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  border: 1px solid #374151;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .quote-card {
+    padding: 2.5rem;
+  }
+}
+
+/* Title styling */
+.quote-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .quote-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+/* Area where the quote, loading, or error text appears */
+.quote-content {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Styling for the quote text */
+.quote-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #d1d5db;
+  margin: 0;
+}
+
+/* Styling for loading and error messages */
+.loading-text,
+.error-text {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+.error-text {
+  color: #f87171;
+  font-weight: 500;
+}
+
+/* Button styling */
+.quote-button {
+  background-color: #0891b2;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.quote-button:hover:not(:disabled) {
+  background-color: #0e7490;
+  transform: scale(1.05);
+}
+
+.quote-button:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

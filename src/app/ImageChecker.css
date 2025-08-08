@@ -1,0 +1,259 @@
+/* ImageChecker.css */
+
+/* General body and container styles */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif; /* Ensuring Inter font is used */
+  background-color: #111827; /* Dark background from new theme */
+}
+
+/* Overall container for the app, matching the new theme's app-container */
+.image-checker-container {
+  background-color: #111827;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box; /* Ensures padding is included in element's total width */
+}
+
+/* The main card element, adapted for the captcha slide */
+.image-checker-slide {
+  width: 100%;
+  max-width: 42rem; /* Matching the new theme's card max-width */
+  background-color: #1f2937; /* Dark background from new theme */
+  border-radius: 1rem; /* Rounded corners from new theme */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* Stronger shadow from new theme */
+  padding: 1.5rem; /* Padding from new theme */
+  border: 1px solid #374151; /* Border from new theme */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px; /* Ensure space for captcha elements */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  animation: fadeIn 0.6s ease-out forwards;
+  margin: 1.5rem 1rem; /* Keep some margin around the card */
+}
+
+@media (min-width: 768px) {
+  .image-checker-slide {
+    padding: 2.5rem; /* Larger padding for larger screens */
+  }
+}
+
+/* Header/Title styles, adapted from the new theme */
+.image-checker-title {
+  font-size: 2.25rem; /* Larger font size from new theme */
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #22d3ee; /* Accent color from new theme */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .image-checker-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+/* Text within the captcha slide */
+.image-checker-text {
+  font-size: 1.4rem;
+  color: #d1d5db; /* Lighter text color for readability on dark background */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Captcha specific styles */
+.captcha-instruction {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #9ca3af; /* Subtler color for instructions */
+  margin-bottom: 1rem;
+}
+
+.captcha-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.captcha-image-item {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  border: 2px solid #4b5563; /* Darker border from new theme */
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #374151; /* Dark background for items */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #6b7280; /* Placeholder text color */
+  font-weight: bold;
+  user-select: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.captcha-image-item.selected {
+  border-color: #22d3ee; /* Accent color for selected */
+  background-color: #0d4a5b; /* Darker background for selected */
+}
+
+.captcha-image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.captcha-slider-container {
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.captcha-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  background: #4b5563; /* Darker slider track */
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+.captcha-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #22d3ee; /* Accent color for slider thumb */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.captcha-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #22d3ee; /* Accent color for slider thumb */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.captcha-input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #4b5563; /* Darker border for input */
+  border-radius: 0.5rem;
+  width: 80%;
+  max-width: 300px;
+  margin-top: 1rem;
+  background-color: #374151; /* Dark background for input */
+  color: white; /* White text for input */
+  transition: all 0.3s;
+}
+
+.captcha-input::placeholder {
+  color: #6b7280; /* Placeholder color */
+}
+
+.captcha-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #06b6d4; /* Focus ring accent color */
+  border-color: #06b6d4;
+}
+
+/* Button styles, adapted from the new theme's send-button */
+.image-checker-button {
+  background-color: #0891b2; /* Base color from new theme */
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem; /* Padding from new theme */
+  border: none;
+  border-radius: 0.5rem; /* Rounded corners from new theme */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Shadow from new theme */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 2rem; /* Add space above button */
+  font-size: 1.125rem; /* Matching font size */
+}
+
+.image-checker-button:hover {
+  background-color: #0e7490; /* Darker hover color */
+  transform: scale(1.02); /* Slightly less aggressive scale on hover */
+}
+
+.image-checker-button:active {
+  background-color: #064e5c; /* Even darker active color */
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation (retained) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-checker-slide {
+    padding: 1.8rem;
+    min-height: 180px;
+  }
+  .image-checker-text {
+    font-size: 1.2rem;
+  }
+  .captcha-instruction {
+    font-size: 1rem;
+  }
+  .image-checker-button {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-checker-slide {
+    padding: 1.2rem;
+    margin: 1rem 0.5rem;
+    min-height: 150px;
+  }
+  .image-checker-text {
+    font-size: 1rem;
+  }
+  .captcha-image-grid {
+    gap: 5px;
+    max-width: 250px;
+  }
+  .image-checker-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}

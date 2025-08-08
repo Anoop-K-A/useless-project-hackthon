@@ -19,15 +19,15 @@ function HomePage() {
               setPage("Home");
             }}
           >
-            home
+            HOME
           </div>
           <div
             className="option"
             onClick={() => {
-              setPage("Image");
+              setPage("CAPTCHA");
             }}
           >
-            image
+            CAPTCHA
           </div>
           <div
             className="option"
@@ -35,12 +35,12 @@ function HomePage() {
               setPage("Random");
             }}
           >
-            random
+            RANDOM
           </div>
         </div>
         <div className="content">
           {page === "Home" && <Demotivation />}
-          {page === "Image" && <ImageChecker />}
+          {page === "CAPTCHA" && <ImageChecker />}
           {page === "Random" && <Random />}
         </div>
       </div>
